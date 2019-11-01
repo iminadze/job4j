@@ -16,7 +16,6 @@ public class MinDiapasonTest {
                 is(0)
         );
     }
-
     @Test
     public void whenLastMin() {
         assertThat(
@@ -24,10 +23,9 @@ public class MinDiapasonTest {
                         new int[] {10, 5, 3, 1},
                         1, 3
                 ),
-                is(3)
+                is(1)
         );
     }
-
     @Test
     public void whenMiddleMin() {
         assertThat(
