@@ -18,7 +18,7 @@ public class Converter {
         int outRTE = rubleToEuro(inRTE);
         int expectedRTE = 2;
         boolean passedRTE = expectedRTE == outRTE;
-        System.out.println("140 rubles are 2 euro. Test result:" +" " + passedRTE );
+        System.out.println("140 rubles are 2 euro. Test result:" + " " + passedRTE);
         int inRTD = 180;
         int outRTD = rubleToDollar(inRTD);
         int expectedRTD = 3;
@@ -28,11 +28,11 @@ public class Converter {
         int outETR = euroToRuble(inETR);
         int expectedETR = 350;
         boolean passedETR = expectedETR == outETR;
-        System.out.println("5 euro are 350 ruble. Test result:" + " " + passedETR );
+        System.out.println("5 euro are 350 ruble. Test result:" + " " + passedETR);
         int inDTR = 6;
         int outDTR = dollarToRuble(inDTR);
         int expectedDTR = 360;
         boolean passedDTR = expectedDTR == outDTR;
-        System.out.println("6 dollar are 360 ruble. Test result:" +" " + passedDTR );
+        System.out.println("6 dollar are 360 ruble. Test result:" + " " + passedDTR);
     }
 }

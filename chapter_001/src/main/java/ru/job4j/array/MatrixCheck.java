@@ -9,13 +9,13 @@ public class MatrixCheck {
             for (int cell = 0; cell < board.length; cell++) {
                 char sign = board[row][cell];
                 System.out.print(sign);
-                if (board[row][cell] == 'X'){
+                if (board[row][cell] == 'X') {
                     winCount1++;
                 }
-                if (board[cell][row] == 'X'){
+                if (board[cell][row] == 'X') {
                     winCount2++;
                 }
-                if (winCount1 == board.length || winCount2 == board.length ){
+                if (winCount1 == board.length || winCount2 == board.length) {
                     result = true;
                     break;
                 }

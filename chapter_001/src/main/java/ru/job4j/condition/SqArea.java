@@ -2,8 +2,8 @@ package ru.job4j.condition;
 
 public class SqArea {
     public static double square(int p, int k) {
-        double a = ((0.5*p)/(k+1));
-        return a*k*a;
+        double a = ((0.5 * p) / (k + 1));
+        return a * k * a;
     }
 
     public static void main(String[] args) {
