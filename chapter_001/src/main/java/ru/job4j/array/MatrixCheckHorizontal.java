@@ -1,7 +1,7 @@
 package ru.job4j.array;
 
 public class MatrixCheckHorizontal {
-    public static boolean monoHorizontal(char[][] board, int row) {
+    public static boolean monoHorizont(char[][] board, int row) {
         boolean result = true;
         for (int cell = 0; cell < board.length; cell++) {
             if (board[row][cell] != 'X') {
