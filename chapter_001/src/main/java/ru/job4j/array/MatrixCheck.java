@@ -4,21 +4,15 @@ public class MatrixCheck {
     public static boolean isWin(char[][] board) {
         boolean result = false;
         for (int row = 0; row < board.length; row++) {
-            int winCount1 = 0;
-            int winCount2 = 0;
-            for (int cell = 0; cell < board.length; cell++) {
-                char sign = board[row][cell];
+            int winCount = 0;
+                char sign = board[row][row];
                 System.out.print(sign);
-                if (board[row][cell] == 'X') {
-                    winCount1++;
+                if (board[row][row] == 'X') {
+                    winCount++;
                 }
-                if (board[cell][row] == 'X') {
-                    winCount2++;
-                }
-                if (winCount1 == board.length || winCount2 == board.length) {
+                if (winCount == board.length) {
                     result = true;
                     break;
-                }
             }
             System.out.println();
         }
