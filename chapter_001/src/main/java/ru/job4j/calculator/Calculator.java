@@ -1,12 +1,10 @@
 package ru.job4j.calculator;
-
 /**
  * Класс для вычисления арифметических операций + - * /.
  * @author iminadze
  * @since 30.10.19
  * @version 1
  */
-
 public class Calculator {
     /**
      *  Сложение.
@@ -48,7 +46,6 @@ public class Calculator {
         double result =  first / second;
         System.out.println(first + "/" + second + " = " + result);
     }
-
     /**
      * Main
      * @param args
