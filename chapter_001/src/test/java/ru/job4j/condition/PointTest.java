@@ -6,22 +6,15 @@ import org.junit.Test;
 public class PointTest {
     @Test
     public void pointDistance() {
-        int inX1 = 0;
-        int inY1 = 0;
-        int inX2 = 2;
-        int inY2 = 0;
-        int expected = 2;
-        double out = Point.distance(inX1, inY1, inX2, inY2);
-        Assert.assertEquals(expected, out, 0.01);
+        Point first = new Point(0, 0);
+        Point second = new Point(0, 2);
+        double out = first.distance(second);
+        Assert.assertEquals(2, out, 0.01);
     }
-    @Test
     public void pointDistance1() {
-        int inX1 = 0;
-        int inY1 = 0;
-        int inX2 = 10;
-        int inY2 = 0;
-        int expected = 10;
-        double out = Point.distance(inX1, inY1, inX2, inY2);
-        Assert.assertEquals(expected, out, 0.01);
+        Point first = new Point(0, 0);
+        Point second = new Point(10, 0);
+        double out = first.distance(second);
+        Assert.assertEquals(10, out, 0.01);
     }
 }
