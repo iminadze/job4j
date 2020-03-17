@@ -5,11 +5,11 @@ public class Max {
     }
     public static int max(int first, int second, int third) {
         int temp = max(first, second);
-        return (temp > third) ? temp : third;
+        return max(temp, third);
     }
     public static int max(int first, int second, int third, int fourth) {
         int temp1 = max(first, second);
         int temp2 = max(third, fourth);
-        return (temp1 > temp2) ? temp1 : temp2;
+        return max(temp1, temp2);
     }
 }
