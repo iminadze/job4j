@@ -20,4 +20,24 @@ public class MaxTest {
         int result = Max.max(4, 4);
         assertThat(result, is(4));
     }
+    @Test
+    public void whenThreeValues() {
+        int result = Max.max(4, 9, 6);
+        assertThat(result, is(9));
+    }
+    @Test
+    public void whenThreeValues1() {
+        int result = Max.max(4, 1, 10);
+        assertThat(result, is(10));
+    }
+    @Test
+    public void whenFourValues() {
+        int result = Max.max(3, 7, 6, 11);
+        assertThat(result, is(11));
+    }
+    @Test
+    public void whenFourValues1() {
+        int result = Max.max(3, 7, 11, 1);
+        assertThat(result, is(11));
+    }
 }
