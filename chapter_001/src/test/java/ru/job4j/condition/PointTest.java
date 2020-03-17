@@ -17,4 +17,18 @@ public class PointTest {
         double out = first.distance(second);
         Assert.assertEquals(10, out, 0.01);
     }
+    @Test
+    public void pointDistance2() {
+        Point first = new Point(0, 0, 0);
+        Point second = new Point(0, 0, 2);
+        double out = first.distance3d(second);
+        Assert.assertEquals(2, out, 0.01);
+    }
+    @Test
+    public void pointDistance3() {
+        Point first = new Point(5, 5, 5);
+        Point second = new Point(4, 4, 4);
+        double out = first.distance3d(second);
+        Assert.assertEquals(1.73, out, 0.01);
+    }
 }
