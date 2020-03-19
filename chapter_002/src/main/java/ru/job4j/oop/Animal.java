@@ -5,6 +5,9 @@ public class Animal {
         super();
         System.out.println("Animal");
     }
+    public Animal(String name) {
+        super();
+    }
        public static void main(String[] args) {
             Tiger tiger = new Tiger();
     }
