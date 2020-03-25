@@ -7,9 +7,9 @@ public class Animal {
     }
     public Animal(String name) {
         super();
-        System.out.println("Animal");
+        System.out.println(name);
     }
        public static void main(String[] args) {
-            Tiger tiger = new Tiger();
+            Tiger tiger = new Tiger("Tiger");
     }
 }

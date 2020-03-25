@@ -6,7 +6,7 @@ public class Tiger extends Predator {
         System.out.println("Tiger");
     }
     public Tiger(String name) {
-        super(name);
-        System.out.println("Tiger");
+        super("Predator");
+        System.out.println(name);
     }
 }
